@@ -2,6 +2,136 @@
   "questions": [
     {
       "id": 1,
+      "question": "Quel est le processus par lequel les plantes convertissent la lumière en énergie ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Photosynthèse",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Osmose",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Fermentation",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Respiration",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Quel scientifique a formulé les lois du mouvement et de la gravité au XVIIe siècle ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Galilée",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Albert Einstein",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Isaac Newton",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "label": "Marie Curie",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Quelle est l'unité de mesure de l'intensité du courant électrique ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Le watt",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Le ohm",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Le volt",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "L'ampère",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Quel est l'élément chimique principal constituant de l'atmosphère terrestre ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "L'azote",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Le carbone",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "L'oxygène",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "L'hydrogène",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Quel scientifique a découvert la pénicilline en 1928 ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Marie Curie",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Louis Pasteur",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Alexander Fleming",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "label": "Albert Einstein",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
       "question": "Quel événement a marqué le début de la Révolution française en 1789 ?",
       "answers": [
         {
@@ -16,18 +146,18 @@
         },
         {
           "id": 3,
-          "label": "Le sacre de Napoléon Bonaparte",
+          "label": "La Déclaration des Droits de l'Homme et du Citoyen",
           "isCorrect": false
         },
         {
           "id": 4,
-          "label": "La Déclaration des Droits de l'Homme et du Citoyen",
+          "label": "Le sacre de Napoléon Bonaparte",
           "isCorrect": false
         }
       ]
     },
     {
-      "id": 2,
+      "id": 7,
       "question": "Quelle bataille a mis fin à l'expansionnisme napoléonien en Europe en 1815 ?",
       "answers": [
         {
@@ -42,18 +172,18 @@
         },
         {
           "id": 3,
-          "label": "Bataille de Trafalgar",
+          "label": "Bataille de Borodino",
           "isCorrect": false
         },
         {
           "id": 4,
-          "label": "Bataille de Borodino",
+          "label": "Bataille de Trafalgar",
           "isCorrect": false
         }
       ]
     },
     {
-      "id": 3,
+      "id": 8,
       "question": "Quelle civilisation a construit la cité de Machu Picchu au XVe siècle ?",
       "answers": [
         {
@@ -79,7 +209,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 9,
       "question": "Quel empereur romain a instauré le christianisme comme religion officielle de l'Empire ?",
       "answers": [
         {
@@ -105,7 +235,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 10,
       "question": "Quel événement a marqué la fin de la Seconde Guerre mondiale en Europe en 1945 ?",
       "answers": [
         {
@@ -131,131 +261,911 @@
       ]
     },
     {
-      "id": 6,
-      "question": "Quel est le processus par lequel les plantes convertissent la lumière en énergie ?",
+      "id": 11,
+      "question": "Quel pays a remporté la Coupe du monde de football en 2018 ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "France",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Brésil",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Allemagne",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Espagne",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Quelle joueuse de tennis détient le record du nombre de titres en Grand Chelem ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Serena Williams",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Maria Sharapova",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Venus Williams",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Steffi Graf",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "Quel joueur de basketball est souvent surnommé 'King James' ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Kobe Bryant",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "LeBron James",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "label": "Michael Jordan",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Stephen Curry",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Dans quel sport peut-on marquer un 'try' ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Football américain",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Rugby",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "label": "Tennis",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Basketball",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Quel est le pays d'origine du sumo, un sport de lutte traditionnel ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Japon",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Chine",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Corée du Sud",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Mongolie",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "Qui est l'auteur du roman 'Guerre et Paix' ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Victor Hugo",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Fyodor Dostoevsky",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Leo Tolstoy",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "label": "Charles Dickens",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "Quel est le titre du premier livre de la série 'Harry Potter' de J.K. Rowling ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Harry Potter et la Chambre des Secrets",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Harry Potter et le Prisonnier d'Azkaban",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Harry Potter à l'École des Sorciers",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "label": "Harry Potter et la Coupe de Feu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Quel écrivain français a écrit 'Les Misérables' ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Gustave Flaubert",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Victor Hugo",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "label": "Alexandre Dumas",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Émile Zola",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Dans quelle pièce de Shakespeare trouve-t-on le personnage d'Ophélie ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Hamlet",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Roméo et Juliette",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Macbeth",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Othello",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Quel roman dystopique d'George Orwell dépeint un régime totalitaire surveillant étroitement la population ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "1984",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Le Meilleur des Mondes",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Fahrenheit 451",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Brave New World",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Qui a effectué le premier vol motorisé contrôlé en avion en 1903 ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Wilbur Wright",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Orville Wright",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Amelia Earhart",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Charles Lindbergh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Quel est le nom de l'avion supersonique fabriqué par Aérospatiale et British Aerospace ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Concorde",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Spitfire",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "B-2 Spirit",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "SR-71 Blackbird",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Quel célèbre aviateur a été le premier à traverser l'Atlantique en solitaire en 1927 ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Amelia Earhart",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Charles Lindbergh",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "label": "Howard Hughes",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Erich Hartmann",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Quel est le terme utilisé pour désigner l'angle entre l'aile d'un avion et l'horizontale ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "L'altitude",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "L'incidence",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "label": "La portance",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "La traînée",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Quel est le premier avion à avoir franchi le mur du son en vol horizontal en 1947 ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Hawker Hurricane",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Bell X-1",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "label": "Messerschmitt Me 262",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Lockheed P-80 Shooting Star",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "question": "Quel est l'élément chimique dont le symbole est Fe ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Fer",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Fluor",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Fermeium",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Fluorine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Quel est l'organe du corps humain qui produit l'insuline ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Le pancréas",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Le foie",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Les reins",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "L'estomac",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "question": "Quel est le processus de transformation de l'eau liquide en vapeur à basse température ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Évaporation",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Condensation",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Sublimation",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Solidification",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "question": "Quel est le plus grand organe du corps humain ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Le cerveau",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Le foie",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "label": "Le coeur",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Les poumons",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Quelle est la plus grande planète du système solaire ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Jupiter",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Saturne",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Mars",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Vénus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "question": "Quel est le processus par lequel les organismes produisent de l'énergie à partir de glucose et d'oxygène ?",
       "answers": [
         {
           "id": 1,
           "label": "Photosynthèse",
-          "isCorrect": true
+          "isCorrect": false
         },
         {
           "id": 2,
           "label": "Respiration",
-          "isCorrect": false
+          "isCorrect": true
         },
         {
           "id": 3,
-          "label": "Osmose",
-          "isCorrect": false
-        },
-        {
-          "id": 4,
           "label": "Fermentation",
           "isCorrect": false
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "question": "Quel scientifique a formulé les lois du mouvement et de la gravité au XVIIe siècle ?",
-      "answers": [
-        {
-          "id": 1,
-          "label": "Isaac Newton",
-          "isCorrect": true
-        },
-        {
-          "id": 2,
-          "label": "Galilée",
-          "isCorrect": false
-        },
-        {
-          "id": 3,
-          "label": "Albert Einstein",
-          "isCorrect": false
         },
         {
           "id": 4,
-          "label": "Marie Curie",
+          "label": "Digestion",
           "isCorrect": false
         }
       ]
     },
     {
-      "id": 8,
-      "question": "Quelle est l'unité de mesure de l'intensité du courant électrique ?",
+      "id": 32,
+      "question": "Quelle partie du corps humain est affectée par la myopie ?",
       "answers": [
         {
           "id": 1,
-          "label": "L'ampère",
-          "isCorrect": true
-        },
-        {
-          "id": 2,
-          "label": "Le volt",
+          "label": "L'oreille interne",
           "isCorrect": false
         },
         {
+          "id": 2,
+          "label": "La rétine",
+          "isCorrect": true
+        },
+        {
           "id": 3,
-          "label": "Le watt",
+          "label": "Le poumon",
           "isCorrect": false
         },
         {
           "id": 4,
-          "label": "Le ohm",
+          "label": "Le foie",
           "isCorrect": false
         }
       ]
     },
     {
-      "id": 9,
-      "question": "Quel est l'élément chimique principal constituant de l'atmosphère terrestre ?",
+      "id": 33,
+      "question": "Quel est le processus de division cellulaire qui produit des cellules filles identiques à la cellule mère ?",
       "answers": [
         {
           "id": 1,
-          "label": "L'azote",
+          "label": "Mitose",
           "isCorrect": true
         },
         {
           "id": 2,
-          "label": "L'oxygène",
+          "label": "Méiose",
           "isCorrect": false
         },
         {
           "id": 3,
-          "label": "Le carbone",
+          "label": "Fécondation",
           "isCorrect": false
         },
         {
           "id": 4,
-          "label": "L'hydrogène",
+          "label": "Apoptose",
           "isCorrect": false
         }
       ]
     },
     {
-      "id": 10,
-      "question": "Quel scientifique a découvert la pénicilline en 1928 ?",
+      "id": 34,
+      "question": "Quel est l'organe du corps humain qui filtre le sang pour éliminer les déchets et produire l'urine ?",
       "answers": [
         {
           "id": 1,
-          "label": "Alexander Fleming",
-          "isCorrect": true
+          "label": "Les poumons",
+          "isCorrect": false
         },
         {
           "id": 2,
-          "label": "Louis Pasteur",
+          "label": "Le foie",
           "isCorrect": false
         },
         {
           "id": 3,
-          "label": "Marie Curie",
+          "label": "Les reins",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "label": "Le coeur",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Quel est le composant principal des membranes cellulaires ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Protéines",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Glucides",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Lipides",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "label": "Acides nucléiques",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "question": "Quelle entreprise a développé le premier téléphone portable en 1973 ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Apple",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Motorola",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "label": "Sony",
           "isCorrect": false
         },
         {
           "id": 4,
-          "label": "Albert Einstein",
+          "label": "Samsung",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "question": "Qu'est-ce que le 'Wi-Fi' signifie littéralement ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Wireless Fidelity",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "World Wide Web",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Web Interface",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Wireless Internet",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "question": "Quel est le nom du robot explorateur envoyé sur Mars par la NASA en 2012 ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Opportunity",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Curiosity",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "label": "Spirit",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Voyager",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "question": "Quel est le nom de l'intelligence artificielle développée par IBM qui a battu des champions humains au jeu de quiz 'Jeopardy!' ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Deep Blue",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Watson",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "label": "AlphaGo",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Siri",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "question": "Quel est le langage de programmation principalement utilisé pour le développement d'applications Android ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Swift",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Python",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Java",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "label": "C#",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "question": "Quel philosophe grec a été le disciple de Socrate et le maître d'Aristote ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Platon",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Aristote",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Socrate",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Héraclite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "question": "Quelle est la célèbre maxime de René Descartes qui exprime son doute méthodique ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Cogito, ergo sum",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Carpe diem",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Sapere aude",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Alea jacta est",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "question": "Quel philosophe allemand est l'auteur de 'Ainsi parlait Zarathoustra' ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Søren Kierkegaard",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "Friedrich Nietzsche",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "label": "Immanuel Kant",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Karl Marx",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "question": "Quel courant de pensée philosophique prône le rejet de toutes les croyances et opinions non prouvées par la raison ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "L'existentialisme",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "label": "L'empirisme",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "label": "Le scepticisme",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Le rationalisme",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "question": "Quel philosophe chinois est le fondateur du confucianisme ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Confucius",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Lao Tseu",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Bouddha",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Sun Tzu",
           "isCorrect": false
         }
       ]
