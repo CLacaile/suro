@@ -33,7 +33,7 @@ server.get("/questions/random", (req, res) => {
     router.db.get("questions").nth(index).value()
   );
 
-  res.json({ randomQuestions });
+  res.json(randomQuestions);
 });
 
 server.use(router);
