@@ -1,0 +1,25 @@
+.homescreen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 0;
+    font-size: 7.5rem;
+    color: transparent;
+    background-image: radial-gradient(#ffffff 1px, #000000 1px); /* 1px red-ish dots on black background */
+    background-size: 20px 20px;
+    background-clip: text; /* Clips the background image so the text becomes a mask */
+    animation: moveDots 40s linear infinite;
+}
+
+@keyframes moveDots {
+    0% {
+        background-position: 100% 0; /* Upper right corner */
+    }
+    100% {
+        background-position: 0 100%; /* Lower left corner */
+    }
+}

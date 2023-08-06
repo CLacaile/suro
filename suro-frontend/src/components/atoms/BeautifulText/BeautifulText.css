@@ -1,0 +1,33 @@
+.beautiful-text {
+    margin-top: 0;
+    font-size: 5rem;
+    color: transparent;
+    background-image: radial-gradient(#ffffff 1px, #000000 1px); /* 1px red-ish dots on black background */
+    background-size: 20px 20px;
+    background-clip: text; /* Clips the background image so the text becomes a mask */
+    animation: moveDots 40s linear infinite;
+}
+
+.super-big-text {
+    font-size: 10rem;
+    font-weight: bold;
+}
+
+.big-text {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.md-text {
+    font-size: 3rem;
+    line-height: 110%;
+}
+
+@keyframes moveDots {
+    0% {
+        background-position: 100% 0; /* Upper right corner */
+    }
+    100% {
+        background-position: 0 100%; /* Lower left corner */
+    }
+}

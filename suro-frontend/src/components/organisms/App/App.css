@@ -1,0 +1,7 @@
+.App {
+  text-align: center;
+  background-color: red;
+  width: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
