@@ -5,15 +5,19 @@ import { getRandomColor } from "../../../lib/colors";
 
 export default function QuestionList() {
   const [bgColor, setBgColor] = useState();
-  const [questions, setQuestions] = useState();
+  const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
-    if (!questions) setQuestions(fetchRandomQuestions(2));
+    const generateFirstTwoQuestions = async () => {
+      const response = await fetchRandomQuestions(2);
+      setQuestions(response);
+    }
+    if (!questions.length) generateFirstTwoQuestions();
     if (!bgColor) setBgColor(getRandomColor());
   }, []);
 
-  const onNextQuestion = () => {
-    const newQuestions = fetchRandomQuestions();
+  const onNextQuestion = async () => {
+    const newQuestions = await fetchRandomQuestions();
     setQuestions((prevQuestions) => [...prevQuestions, ...newQuestions]);
     const randomColor = getRandomColor(bgColor);
     setBgColor(randomColor);
