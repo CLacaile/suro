@@ -24,7 +24,7 @@ export default function Question({ question, answers, onNextQuestion, background
       <h1 className="question">{question}</h1>
       <div className="answers">
         {answers
-          ? answers.map((answer) => (
+          ? answers.sort(() => 0.5 - Math.random()).map((answer) => (
               <AnswerButton
                 key={"answer-" + answer.id}
                 text={answer.label}
