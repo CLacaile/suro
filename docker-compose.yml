@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  api:
+    image: suro-api:prod
+    container_name: suro-api
+    ports:
+      - "30000:30000"
+
+  frontend:
+    image: suro-frontend:prod
+    container_name: suro-frontend
+    ports:
+      - "8080:80"
+    environment:
+      - REACT_APP_SURO_API_URL=suro-api:30000
