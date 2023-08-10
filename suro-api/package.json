@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/CLacaile/suro#readme",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "json-server": "^0.17.3"
   }
 }
