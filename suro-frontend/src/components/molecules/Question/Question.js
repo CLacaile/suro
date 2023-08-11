@@ -1,14 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import "./Question.css";
 import AnswerButton from "../../atoms/AnswerButton/AnswerButton";
 import BeautifulText from "../../atoms/BeautifulText/BeautifulText";
 import NextQuestionButton from "../../atoms/NextQuestionButton/NextQuestionButton";
-import { COLORS } from "../../../lib/colors";
+import { COLORS, getRandomColor } from "../../../lib/colors";
 
-export default function Question({ question, answers, onNextQuestion, backgroundColor }) {
-  const [bgColor, setBgColor] = useState(backgroundColor);
+export default function Question({ question, answers, onNextQuestion }) {
+  const [shuffledAnswers, setShuffledAnswers] = useState();
+  const [bgColor, setBgColor] = useState();
   const [clickedAnswer, setClickedAnswer] = useState();
+
+  useEffect(() => {
+    if (!bgColor) setBgColor(getRandomColor());
+  }, [])
+
+  useEffect(() => {
+    setShuffledAnswers(answers.sort(() => 0.5 - Math.random()));
+  }, [answers]);
 
   const handleAnswerClick = (answer) => {
     setClickedAnswer(answer);
@@ -23,12 +32,13 @@ export default function Question({ question, answers, onNextQuestion, background
       />
       <h1 className="question">{question}</h1>
       <div className="answers">
-        {answers
-          ? answers.sort(() => 0.5 - Math.random()).map((answer) => (
+        {shuffledAnswers
+          ? shuffledAnswers.map((answer) => (
               <AnswerButton
                 key={"answer-" + answer.id}
                 text={answer.label}
                 strikeText={clickedAnswer ? !answer.isCorrect : false}
+                color={(clickedAnswer && !clickedAnswer.isCorrect && answer.isCorrect) ? "limegreen" : COLORS.WHITE}
                 onClick={() => handleAnswerClick(answer)}
               />
             ))
@@ -48,6 +58,5 @@ Question.propTypes = {
       isCorrect: PropTypes.bool.isRequired,
     })
   ).isRequired,
-  onNextQuestion: PropTypes.func,
-  backgroundColor: PropTypes.string
+  onNextQuestion: PropTypes.func
 };

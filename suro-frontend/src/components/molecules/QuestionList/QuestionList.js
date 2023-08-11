@@ -1,22 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Question from "../Question/Question";
 import { useQuestions } from "../../../lib/questions";
-import { getRandomColor } from "../../../lib/colors";
 
 export default function QuestionList() {
-  const [bgColor, setBgColor] = useState();
-  const {questions, addQuestions} = useQuestions();
-
-  useEffect(() => {
-    if (!bgColor) setBgColor(getRandomColor());
-  }, []);
+  const { questions, addQuestions } = useQuestions();
 
   const onNextQuestion = async () => {
-    //const newQuestions = await fetchRandomQuestions();
     await addQuestions();
-   //setQuestions((prevQuestions) => [...prevQuestions, ...newQuestions]);
-    const randomColor = getRandomColor(bgColor);
-    setBgColor(randomColor);
   };
 
   return (
@@ -30,7 +20,6 @@ export default function QuestionList() {
                 question={question.question}
                 answers={question.answers}
                 onNextQuestion={onNextQuestion}
-                backgroundColor={bgColor}
               />
             );
           })
