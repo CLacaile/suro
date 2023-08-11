@@ -22,7 +22,7 @@ export default function AnswerButton({
 
 AnswerButton.propTypes = {
   text: PropTypes.string.isRequired,
-  color: PropTypes.oneOf(Object.keys(COLORS)),
+  color: PropTypes.oneOf(Object.values(COLORS)),
   strikeText: PropTypes.bool,
   onClick: PropTypes.func,
 };
