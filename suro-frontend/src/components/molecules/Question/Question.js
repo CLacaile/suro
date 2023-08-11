@@ -38,7 +38,7 @@ export default function Question({ question, answers, onNextQuestion }) {
                 key={"answer-" + answer.id}
                 text={answer.label}
                 strikeText={clickedAnswer ? !answer.isCorrect : false}
-                color={(clickedAnswer && !clickedAnswer.isCorrect && answer.isCorrect) ? "limegreen" : COLORS.WHITE}
+                color={(clickedAnswer && !clickedAnswer.isCorrect && answer.isCorrect) ? COLORS.LIME_GREEN : COLORS.WHITE}
                 onClick={() => handleAnswerClick(answer)}
               />
             ))
