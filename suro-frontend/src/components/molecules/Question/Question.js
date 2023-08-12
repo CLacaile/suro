@@ -5,6 +5,7 @@ import BeautifulText from "../../atoms/BeautifulText/BeautifulText";
 import NextQuestionButton from "../../atoms/NextQuestionButton/NextQuestionButton";
 import { COLORS, getRandomColor } from "../../../lib/colors";
 import AnswerList from "../AnswerList/AnswerList";
+import QuestionLayout from "../../templates/QuestionLayout/QuestionLayout";
 
 export default function Question({ question, answers, onNextQuestion }) {
   const [shuffledAnswers, setShuffledAnswers] = useState();
@@ -25,19 +26,24 @@ export default function Question({ question, answers, onNextQuestion }) {
   };
 
   return (
-    <div className="question-layout" style={{ backgroundColor: bgColor }}>
-      <BeautifulText
-        className="super-big-text"
-        text={selectedAnswer ? "!!" : "?"}
-      />
-      <h1 className="question">{question}</h1>
-      <AnswerList
-        answers={shuffledAnswers}
-        selectedAnswer={selectedAnswer}
-        onAnswerClick={handleAnswerClick}
-      />
-      <NextQuestionButton onClick={onNextQuestion} />
-    </div>
+    <QuestionLayout
+      header={
+        <BeautifulText
+          className="super-big-text"
+          text={selectedAnswer ? "!!" : "?"}
+        />
+      }
+      question={<h1 className="question">{question}</h1>}
+      answers={
+        <AnswerList
+          answers={shuffledAnswers}
+          selectedAnswer={selectedAnswer}
+          onAnswerClick={handleAnswerClick}
+        />
+      }
+      nextQuestionButton={<NextQuestionButton onClick={onNextQuestion} />}
+      backgroundColor={bgColor}
+    />
   );
 }
 
