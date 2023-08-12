@@ -33,6 +33,6 @@ export default function AnswerList({ answers, selectedAnswer, onAnswerClick }) {
 
 AnswerList.propTypes = {
   answers: PropTypes.array,
-  selectedAnswer: PropTypes.bool,
+  selectedAnswer: PropTypes.object,
   onAnswerClick: PropTypes.func.isRequired,
 };
