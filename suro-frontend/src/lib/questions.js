@@ -21,7 +21,7 @@ export const useQuestions = () => {
 
   useEffect(() => {
     const fetchInitialQuestions = async () => {
-      const randomQuestions = await fetchRandomQuestions(2);
+      const randomQuestions = await fetchRandomQuestions(1);
       setQuestions(randomQuestions);
     };
 

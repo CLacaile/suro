@@ -1,29 +1,30 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import PropTypes from "prop-types";
 import "./QuestionLayout.css";
 import { COLORS } from "../../../lib/colors";
 
-export default function QuestionLayout({
+const QuestionLayout = forwardRef(({
   header,
   question,
   answers,
-  nextQuestionButton,
   backgroundColor,
-}) {
+}, ref) => {
   return (
-    <div className="question-layout" style={{ backgroundColor }}>
+    <div ref={ref} className="question-layout" style={{ backgroundColor }}>
       {header}
       {question}
       {answers}
-      {nextQuestionButton}
     </div>
   );
-}
+});
+
+QuestionLayout.displayName = "QuestionLayout";
 
 QuestionLayout.propTypes = {
   header: PropTypes.node,
   question: PropTypes.node,
   answers: PropTypes.node,
-  nextQuestionButton: PropTypes.node,
   backgroundColor: PropTypes.oneOf(Object.values(COLORS)),
 };
+
+export default QuestionLayout;

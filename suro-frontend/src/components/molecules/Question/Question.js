@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { forwardRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import "./Question.css";
 import BeautifulText from "../../atoms/BeautifulText/BeautifulText";
-import NextQuestionButton from "../../atoms/NextQuestionButton/NextQuestionButton";
 import { COLORS, getRandomColor } from "../../../lib/colors";
 import AnswerList from "../AnswerList/AnswerList";
 import QuestionLayout from "../../templates/QuestionLayout/QuestionLayout";
 
-export default function Question({ question, answers, onNextQuestion }) {
+const Question = forwardRef(({ question, answers }, ref) => {
   const [shuffledAnswers, setShuffledAnswers] = useState();
   const [bgColor, setBgColor] = useState();
   const [selectedAnswer, setSelectedAnswer] = useState();
@@ -27,6 +26,7 @@ export default function Question({ question, answers, onNextQuestion }) {
 
   return (
     <QuestionLayout
+      ref={ref}
       header={
         <BeautifulText
           className="super-big-text"
@@ -41,11 +41,13 @@ export default function Question({ question, answers, onNextQuestion }) {
           onAnswerClick={handleAnswerClick}
         />
       }
-      nextQuestionButton={<NextQuestionButton onClick={onNextQuestion} />}
+      nextQuestionButton={<></>}
       backgroundColor={bgColor}
     />
   );
-}
+});
+
+Question.displayName = "Question";
 
 Question.propTypes = {
   question: PropTypes.string.isRequired,
@@ -58,3 +60,6 @@ Question.propTypes = {
   ).isRequired,
   onNextQuestion: PropTypes.func,
 };
+
+
+export default Question;
