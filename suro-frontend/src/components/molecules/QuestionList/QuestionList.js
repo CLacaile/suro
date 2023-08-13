@@ -1,6 +1,6 @@
 import React from "react";
 import Question from "../Question/Question";
-import { useQuestions } from "../../../lib/questions";
+import { useQuestions } from "../../../lib/useQuestions";
 import "./QuestionList.css";
 import { useIntersectionObserver } from "../../../lib/useIntersectionObserver.js";
 
