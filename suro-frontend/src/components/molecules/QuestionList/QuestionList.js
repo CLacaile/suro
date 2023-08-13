@@ -1,26 +1,14 @@
-import React, { useCallback, useRef } from "react";
+import React from "react";
 import Question from "../Question/Question";
 import { useQuestions } from "../../../lib/questions";
 import "./QuestionList.css";
+import { useIntersectionObserver } from "../../../lib/useIntersectionObserver.js";
 
 export default function QuestionList() {
   const { questions, addQuestions } = useQuestions();
-  const observer = useRef();
 
-  // launch the callback function each time a Question node is in the DOM
-  const questionRef = useCallback((questionNode) => {
-    // disconnect previously observed Question if any
-    if (observer.current) observer.current.disconnect();
-
-    // when the Question node is visible, add a new question
-    observer.current = new IntersectionObserver(async (entries) => {
-      if (entries[0].isIntersecting) {
-        await addQuestions();
-      }
-    });
-
-    if (questionNode) observer.current.observe(questionNode);
-  }, []);
+  // define a question ref so everytime a new question is entirely shown in the screen, we append a new question to the list
+  const questionRef = useIntersectionObserver(addQuestions);
 
   return (
     <div className="question-list">
