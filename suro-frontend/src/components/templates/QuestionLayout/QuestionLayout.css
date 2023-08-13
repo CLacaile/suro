@@ -5,4 +5,5 @@ div.question-layout {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    scroll-snap-align: start;
 }
