@@ -3,11 +3,17 @@ const jsonServer = require("json-server");
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults({readOnly: true});
+const cors = require("cors");
 
 const DEFAULT_PORT = 30000;
 const PORT = process.env.PORT ?? DEFAULT_PORT;
 
 server.use(middlewares);
+
+const CORS_ORIGIN = process.env.SURO_FRONTEND_URL ?? '*';
+server.use(cors({
+  origin: CORS_ORIGIN
+}));
 
 server.get("/questions/count", (req, res) => {
   const questions = router.db.get("questions");

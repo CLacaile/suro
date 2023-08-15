@@ -28,6 +28,11 @@ npm run start
 # BACKEND
 cd ../suro-api
 
+# Copy .env
+cp .env.sample .env
+echo "SURO_FRONTEND_URL=http://localhost:30000" > .env
+echo "PORT=30000" >> .env
+
 # Install
 npm install
 
