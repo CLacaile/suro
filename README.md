@@ -40,19 +40,23 @@ npm install
 npm run start
 ```
 
-## Build Docker prod images
+## Build and run prod images (recommended)
+
+Don't forget to create a .env file based on the .env.sample file in the repo
+
+```bash
+docker compose up -d --build
+```
+
+## Manually build Docker prod images
 
 ```bash
 # Build frontend
 cd suro-frontend
-docker build -f Dockerfile.prod -t suro-frontend:prod .
+docker build --build-arg REACT_APP_SURO_API_URL=http://my-suro-api-url:my-suro-api-port -f Dockerfile.prod -t suro-frontend:prod .
 
 # Build backend
 docker build -f Dockerfile.prod -t suro-api:prod .
 ```
 
-## Run prod images
-
-```bash
-docker compose up -d
-```
+*Important*: make sure that the build-arg REACT_APP_SURO_API_URL matches the api url and port otherwise the requests will not be allowed by the api CORS policy. That's why it is better to use the docker compose command along with a proper .env file.

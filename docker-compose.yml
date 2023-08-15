@@ -2,15 +2,26 @@ version: '3'
 
 services:
   api:
+    build:
+      context: ./suro-api/
+      dockerfile: Dockerfile.prod
     image: suro-api:prod
     container_name: suro-api
+    environment:
+      - PORT=${SURO_API_PORT}
+      - SURO_FRONTEND_URL=${SURO_FRONTEND_URL}:${SURO_FRONTEND_PORT}
     ports:
-      - "30000:30000"
+      - "${SURO_API_PORT}:${SURO_API_PORT}"
 
   frontend:
+    build:
+      context: ./suro-frontend/
+      dockerfile: Dockerfile.prod
+      args:
+        - REACT_APP_SURO_API_URL=${SURO_API_URL}:${SURO_API_PORT} # define arg here so the env var is available at build time
     image: suro-frontend:prod
     container_name: suro-frontend
     ports:
-      - "8080:80"
+      - "${SURO_FRONTEND_PORT}:80"
     environment:
-      - REACT_APP_SURO_API_URL=suro-api:30000
+      - REACT_APP_SURO_API_URL=${SURO_API_URL}:${SURO_API_PORT}
