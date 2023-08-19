@@ -17,5 +17,5 @@ jobs:
           export SURO_FRONTEND_URL=${{ vars.SURO_FRONTEND_URL }}
           export SURO_API_URL=${{ vars.SURO_API_URL }}
           export SURO_FRONTEND_PORT=${{ vars.SURO_FRONTEND_PORT }}
-          export SURO_API_PORT=$${{ vars.SURO_API_PORT }}
+          export SURO_API_PORT=${{ vars.SURO_API_PORT }}
           docker compose up -d --build
