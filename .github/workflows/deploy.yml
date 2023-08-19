@@ -1,0 +1,22 @@
+name: Build & deploy Suro docker 
+
+on:
+  workflow_dispatch:
+  push:
+    tags: 
+      - v*
+
+jobs:
+  deploy:
+    runs-on: "self-hosted"
+    environment: Production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.5.3
+      - name: Run docker compose up -d --build
+        run: |
+          export SURO_FRONTEND_URL=${{ env.SURO_FRONTEND_URL }}
+          export SURO_API_URL=${{ env.SURO_API_URL }}
+          export SURO_FRONTEND_PORT=${{ env.SURO_FRONTEND_PORT }}
+          export SURO_API_PORT=$${{ env.SURO_API_PORT }}
+          docker compose up -d --build
