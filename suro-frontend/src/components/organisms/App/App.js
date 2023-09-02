@@ -5,7 +5,7 @@ import ErrorFallback from "../ErrorFallback/ErrorFallback";
 import AppLayout from "../../templates/AppLayout/AppLayout";
 import HomeScreen from "../HomeScreen/HomeScreen";
 import QuestionList from "../../molecules/QuestionList/QuestionList";
-
+import Footer from "../../molecules/Footer/Footer";
 
 export default function App() {
 
@@ -20,11 +20,7 @@ export default function App() {
               <QuestionList />
             </>
           }
-          footer={
-            <p>
-              <a href="https://github.com/clacaile">clacaile</a> - 2023
-            </p>
-          }
+          footer={<Footer />}
         />
       </ErrorBoundary>
     </div>
