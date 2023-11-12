@@ -1,12 +1,12 @@
 import React, { forwardRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import "./Question.css";
+import "./QuestionPage.css";
 import BeautifulText from "../../atoms/BeautifulText/BeautifulText";
 import { COLORS, getRandomColor } from "../../../lib/colors";
 import AnswerList from "../AnswerList/AnswerList";
-import QuestionLayout from "../../templates/QuestionLayout/QuestionLayout";
+import QuestionPageLayout from "../../templates/QuestionPageLayout/QuestionPageLayout";
 
-const Question = forwardRef(({ question, answers }, ref) => {
+const QuestionPage = forwardRef(({ id, question, answers }, ref) => {
   const [shuffledAnswers, setShuffledAnswers] = useState();
   const [bgColor, setBgColor] = useState();
   const [selectedAnswer, setSelectedAnswer] = useState();
@@ -25,7 +25,8 @@ const Question = forwardRef(({ question, answers }, ref) => {
   };
 
   return (
-    <QuestionLayout
+    <QuestionPageLayout
+      id={id}
       ref={ref}
       header={
         <BeautifulText
@@ -47,9 +48,10 @@ const Question = forwardRef(({ question, answers }, ref) => {
   );
 });
 
-Question.displayName = "Question";
+QuestionPage.displayName = "Question";
 
-Question.propTypes = {
+QuestionPage.propTypes = {
+  id: PropTypes.string.isRequired,
   question: PropTypes.string.isRequired,
   answers: PropTypes.arrayOf(
     PropTypes.shape({
@@ -61,5 +63,4 @@ Question.propTypes = {
   onNextQuestion: PropTypes.func,
 };
 
-
-export default Question;
+export default QuestionPage;

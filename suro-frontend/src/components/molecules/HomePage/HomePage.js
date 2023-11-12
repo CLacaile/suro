@@ -1,13 +1,13 @@
 import React from "react";
 import NextQuestionButton from '../../atoms/NextQuestionButton/NextQuestionButton';
-import './HomeScreen.css';
+import './HomePage.css';
 import BeautifulText from "../../atoms/BeautifulText/BeautifulText";
 
-export default function HomeScreen() {
+export default function HomePage() {
     return (
-        <div className="homescreen">
+        <section className="homepage">
             <BeautifulText className="big-text" text="SURO?"/>
             <NextQuestionButton/>
-        </div>
+        </section>
     )
 }

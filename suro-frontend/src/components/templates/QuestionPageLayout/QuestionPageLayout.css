@@ -1,4 +1,4 @@
-div.question-layout {
+section.question-page-layout {
     height: 100vh;
     padding: 0% 5%;
     /*background-color: is set by the component script*/

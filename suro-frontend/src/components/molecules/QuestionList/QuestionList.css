@@ -1,7 +1,0 @@
-.question-list {
-    scroll-snap-type: y mandatory;
-}
-
-.question-list > div.question-layout {
-    scroll-snap-stop: always;
-}
