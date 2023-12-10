@@ -1,0 +1,914 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Quelle est la diff\u00e9rence entre un nombre entier et un nombre d\u00e9cimal?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Un nombre entier est un nombre sans fraction. Un nombre d\u00e9cimal est un nombre avec une fraction.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Un nombre entier est un nombre qui ne contient pas de fraction, tandis qu'un nombre d\u00e9cimal contient une fraction.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Un nombre entier est un nombre entier, positif ou n\u00e9gatif, sans virgule. Un nombre d\u00e9cimal est un nombre avec une virgule.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Un nombre entier est un nombre qui ne contient pas de d\u00e9cimales, tandis qu'un nombre d\u00e9cimal contient des d\u00e9cimales.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Comment les math\u00e9matiques peuvent-elles aider \u00e0 r\u00e9soudre des probl\u00e8mes en g\u00e9nie?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Les math\u00e9matiques sont une partie importante de la r\u00e9solution de probl\u00e8mes en g\u00e9nie. Les math\u00e9maticiens peuvent aider \u00e0 d\u00e9velopper des mod\u00e8les pour pr\u00e9dire le comportement des syst\u00e8mes, \u00e0 analyser les donn\u00e9es et \u00e0 optimiser les solutions.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Les math\u00e9matiques sont une langue pr\u00e9cise qui peut aider \u00e0 formaliser les probl\u00e8mes en g\u00e9nie. Les outils math\u00e9matiques peuvent ensuite \u00eatre utilis\u00e9s pour trouver des solutions optimales aux probl\u00e8mes.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Les math\u00e9matiques sont une discipline importante en g\u00e9nie car elles permettent de r\u00e9soudre des probl\u00e8mes complexes. Les math\u00e9matiques peuvent aider \u00e0 comprendre les lois physiques qui r\u00e9gissent les syst\u00e8mes techniques, \u00e0 mod\u00e9liser des syst\u00e8mes pour mieux les comprendre et \u00e0 prendre des d\u00e9cisions optimales en termes de conception et de fonctionnement.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Les math\u00e9matiques sont utilis\u00e9es dans le g\u00e9nie pour r\u00e9soudre des probl\u00e8mes en mod\u00e9lisant les ph\u00e9nom\u00e8nes physiques. Les \u00e9quations math\u00e9matiques sont utilis\u00e9es pour d\u00e9crire les relations entre diff\u00e9rentes variables et permettent aux ing\u00e9nieurs de pr\u00e9dire le comportement d'un syst\u00e8me. Les math\u00e9matiques peuvent aider \u00e0 optimiser les designs en minimisant les erreurs et en maximisant la fiabilit\u00e9.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Quelle est la diff\u00e9rence entre une \u00e9quation et une in\u00e9quation?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Une \u00e9quation est un \u00e9nonc\u00e9 math\u00e9matique \u00e9galitaire qui relie des quantit\u00e9s inconnues. Une in\u00e9quation est un \u00e9nonc\u00e9 math\u00e9matique in\u00e9galitaire qui relie des quantit\u00e9s inconnues.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Une \u00e9quation est un \u00e9galit\u00e9 qui lie diff\u00e9rentes quantit\u00e9s, alors qu'une in\u00e9quation est une relation qui est soit sup\u00e9rieure, soit inf\u00e9rieure, soit \u00e9gale \u00e0 une autre quantit\u00e9.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Une \u00e9quation est une relation entre des quantit\u00e9s qui est \u00e9gale. Une in\u00e9quation est une relation entre des quantit\u00e9s qui est in\u00e9gale.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Une \u00e9quation est un type de relation math\u00e9matique qui \u00e9tablit une \u00e9galit\u00e9 entre deux expressions. Une in\u00e9quation est un type de relation math\u00e9matique qui \u00e9tablit une in\u00e9galit\u00e9 entre deux expressions.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Quel est le plus petit nombre entier positif qui est divisible par les chiffres de 1 \u00e0 10?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Le plus petit nombre entier positif divisible par les chiffres de 1 \u00e0 10 est 2520.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Le plus petit nombre entier positif qui est divisible par les chiffres de 1 \u00e0 10 est 2520.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Le plus petit nombre entier positif divisible par les chiffres de 1 \u00e0 10 est 2520.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Le plus petit nombre entier positif divisible par les chiffres de 1 \u00e0 10 est le nombre 2520.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Quel est le nombre pi?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Le nombre pi est un nombre irrational qui repr\u00e9sente la circonf\u00e9rence d'un cercle \u00e0 l'unit\u00e9 de longueur. Il est \u00e9gal \u00e0 3,1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Le nombre pi est un nombre irrationnel qui repr\u00e9sente la proportionnalit\u00e9 entre le diam\u00e8tre et la circonf\u00e9rence d'un cercle. Pi est \u00e9gal \u00e0 environ 3,14.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Le nombre pi est un nombre irrationnel qui repr\u00e9sente la proportionnalit\u00e9 entre le diam\u00e8tre et la circonf\u00e9rence d'un cercle.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Le nombre pi est un nombre irrationnel qui repr\u00e9sente la rationnalit\u00e9 du cercle. Pi est \u00e9gal \u00e0 3,141592653589793.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Quelle est l'origine de l'histoire?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "The story originated from a folktale.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "L'histoire est originaire de la Gr\u00e8ce antique.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "There is no known origin for the story.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "The story's origin is unknown.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Comment s'est d\u00e9roul\u00e9 le si\u00e8ge de J\u00e9rusalem en 1099 ?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Le si\u00e8ge de J\u00e9rusalem est un \u00e9v\u00e9nement important de la premi\u00e8re croisade. Il a eu lieu en 1099, apr\u00e8s les crois\u00e9s avaient pris Antioche. Les crois\u00e9s ont march\u00e9 sur J\u00e9rusalem, en passant par la ville de J\u00e9richo. La ville \u00e9tait d\u00e9fendue par le gouverneur de la citadelle de J\u00e9rusalem, Iftikhar ad-Daula. Les crois\u00e9s ont commenc\u00e9 \u00e0 assi\u00e9ger la ville le 13 juin 1099. La ville a finalement \u00e9t\u00e9 prise le 15 juillet 1099",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Le si\u00e8ge de J\u00e9rusalem en 1099 a \u00e9t\u00e9 un \u00e9v\u00e9nement majeur de la Premi\u00e8re Croisade. Les crois\u00e9s ont pris d'assaut la ville, qui \u00e9tait alors sous le contr\u00f4le musulman, et l'ont captur\u00e9e apr\u00e8s une bataille acharn\u00e9e. Cela a \u00e9t\u00e9 une victoire cruciale pour les crois\u00e9s, car J\u00e9rusalem est un lieu saint pour les chr\u00e9tiens, et la capture de la ville a permis aux crois\u00e9s de prendre le contr\u00f4le de la Terre sainte.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Le si\u00e8ge de J\u00e9rusalem en 1099 a \u00e9t\u00e9 un \u00e9pisode important de la premi\u00e8re croisade. Les crois\u00e9s, sous le commandement de Godefroy de Bouillon, ont pris la ville apr\u00e8s un si\u00e8ge de plusieurs semaines et ont massacr\u00e9 la population musulmane et juive. J\u00e9rusalem est rest\u00e9e entre les mains des crois\u00e9s jusqu'\u00e0 ce que Saladin reconqui\u00e8re la ville en 1187.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Le si\u00e8ge de J\u00e9rusalem a eu lieu du 7 juin au 15 juillet 1099. La ville a \u00e9t\u00e9 prise par les Crois\u00e9s apr\u00e8s un si\u00e8ge de deux semaines. Les Crois\u00e9s ont massacr\u00e9 la population musulmane et juive de la ville.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Qui \u00e9tait le premier roi de France?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Louis XVI",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Le premier roi de France \u00e9tait Clovis Ier.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Le premier roi de france \u00e9tait Clovis I.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Le premier roi de France \u00e9tait Clovis Ier.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Quelle \u00e9tait la cause principale de la Premi\u00e8re Guerre mondiale?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "L'assassinat de l'archiduc Fran\u00e7ois-Ferdinand d'Autriche-Este par un \u00e9tudiant serbe en juin 1914 a \u00e9t\u00e9 la cause principale de la Premi\u00e8re Guerre mondiale. L'archiduc \u00e9tait l'h\u00e9ritier pr\u00e9somptif de l'Empire austro-hongrois, et son meurtre a entra\u00een\u00e9 une s\u00e9rie d'\u00e9v\u00e9nements qui ont conduit \u00e0 la guerre.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "The main cause of the First World War was the assassination of Archduke Franz Ferdinand of Austria by a Serbian nationalist. This act led to a series of events that resulted in the outbreak of war.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "The main cause of World War I was the assassination of Archduke Franz Ferdinand of Austria.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "La cause principale de la premi\u00e8re guerre mondiale \u00e9tait l'assassinat de l'archiduc Fran\u00e7ois Ferdinand.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Quelle bataille a \u00e9t\u00e9 la plus importante de la Premi\u00e8re Guerre mondiale?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "La bataille la plus importante de la Premi\u00e8re Guerre mondiale a \u00e9t\u00e9 la bataille de Verdun.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "La bataille la plus importante de la Premi\u00e8re Guerre mondiale est la bataille de Verdun.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "La bataille de la Somme a \u00e9t\u00e9 l'une des plus importantes batailles de la Premi\u00e8re Guerre mondiale. Elle a dur\u00e9 du 1er juillet au 18 novembre 1916 et a oppos\u00e9 les arm\u00e9es britannique et fran\u00e7aise aux forces allemandes. Plus de trois millions de soldats ont \u00e9t\u00e9 tu\u00e9s ou bless\u00e9s dans cette bataille, qui a \u00e9t\u00e9 l'une des plus sanglantes de la Premi\u00e8re Guerre mondiale.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "La bataille de Verdun",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Combien de calories un humain peut-il br\u00fbler en une journ\u00e9e?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "La quantit\u00e9 de calories que vous pouvez br\u00fbler en une journ\u00e9e d\u00e9pend de votre niveau d'activit\u00e9. Si vous \u00eates s\u00e9dentaire, vous pouvez br\u00fbler environ 1 200 calories par jour. Si vous \u00eates mod\u00e9r\u00e9ment actif, vous pouvez br\u00fbler environ 2 000 calories par jour. Si vous \u00eates tr\u00e8s actif, vous pouvez br\u00fbler environ 2 800 calories par jour.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Le nombre de calories que vous pouvez br\u00fbler en une journ\u00e9e d\u00e9pend de votre m\u00e9tabolisme et de votre niveau d'activit\u00e9. Les personnes qui ont un m\u00e9tabolisme plus rapide peuvent br\u00fbler plus de calories que les personnes dont le m\u00e9tabolisme est plus lent. Les personnes qui sont plus active peuvent aussi br\u00fbler plus de calories que les personnes qui sont moins actives.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Cela d\u00e9pend de l'activit\u00e9 et du m\u00e9tabolisme de la personne.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Il n'y a pas de r\u00e9ponse unique \u00e0 cette question car tout d\u00e9pend de la personne. Les facteurs qui entrent en jeu sont l'\u00e2ge, le sexe, la taille, le poids et le niveau d'activit\u00e9. En moyenne, un adulte peut br\u00fbler entre 2000 et 3000 calories par jour.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "A quoi sert la vitesse d'un objet?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "La vitesse d'un objet sert \u00e0 d\u00e9terminer sa vitesse de d\u00e9placement.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "La vitesse d'un objet est la vitesse \u00e0 laquelle il se d\u00e9place.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "La vitesse d'un objet sert \u00e0 d\u00e9terminer sa vitesse de d\u00e9placement.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "La vitesse d'un objet est la vitesse \u00e0 laquelle il se d\u00e9place.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "Comment les humains peuvent-ils voler?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Les humains ne peuvent pas voler, mais ils peuvent sauter et glisser dans les airs avec l'aide d'ailettes ou de planeurs.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Humans can fly by using machines that lift them into the air, such as airplanes.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Les humains ne peuvent pas voler, mais ils peuvent sauter et glisser sur les surfaces.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Il n'y a aucune mani\u00e8re pour les humains de voler de mani\u00e8re naturelle. Cependant, ils peuvent utiliser des moyens artificiels pour voler, comme des avions ou des h\u00e9licopt\u00e8res.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Quel est l'\u00e9l\u00e9ment le plus lourd de l'univers?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "L'\u00e9l\u00e9ment le plus lourd de l'univers est l'uranium.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "L'\u00e9l\u00e9ment le plus lourd de l'univers est l'uranium.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "L'\u00e9l\u00e9ment le plus lourd de l'univers est l'uranium.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "L'\u00e9l\u00e9ment le plus lourd de l'univers est l'uranium.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Quelle est la formule de l'\u00e9nergie cin\u00e9tique?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "L'\u00e9nergie cin\u00e9tique est \u00e9gale \u00e0 la moiti\u00e9 de la masse du corps multipli\u00e9e par la vitesse du corps au carr\u00e9.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "L'\u00e9nergie cin\u00e9tique est d\u00e9finie comme suit:\n\nE = 1/2 mv^2\n\no\u00f9 m est la masse du corps en mouvement et v est sa vitesse.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "L'\u00e9nergie cin\u00e9tique est \u00e9gale \u00e0 la moiti\u00e9 de la masse du corps multipli\u00e9e par le carr\u00e9 de sa vitesse.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "L'\u00e9nergie cin\u00e9tique est \u00e9gale \u00e0 la moiti\u00e9 de la masse du corps multipli\u00e9e par le carr\u00e9 de sa vitesse.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "How do chemists measure the amount of a substance in a sample?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Pour mesurer la quantit\u00e9 d'une substance dans un \u00e9chantillon, les chimistes utilisent une technique appel\u00e9e chromatographie en phase gazeuse.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Les chimistes mesurent la quantit\u00e9 d'une substance dans un \u00e9chantillon en utilisant une balance.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Les chimistes mesurent la quantit\u00e9 d'une substance dans un \u00e9chantillon en utilisant une technique appel\u00e9e chromatographie.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Les chimistes mesurent la quantit\u00e9 d'une substance dans un \u00e9chantillon en utilisant diverses m\u00e9thodes, telles que la chromatographie, la spectroscopie, la titration et la microscopie. Ces m\u00e9thodes permettent aux chimistes de d\u00e9terminer la concentration d'une substance dans un \u00e9chantillon et de calculer la quantit\u00e9 de substance pr\u00e9sente.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "Quel est le r\u00f4le de l'oxyg\u00e8ne dans la combustion?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Le r\u00f4le de l'oxyg\u00e8ne dans la combustion est de fournir l'oxyg\u00e8ne n\u00e9cessaire \u00e0 la r\u00e9action.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "L'oxyg\u00e8ne est n\u00e9cessaire pour la combustion, car il r\u00e9agit avec les autres \u00e9l\u00e9ments pour former des produits de combustion.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Le r\u00f4le de l'oxyg\u00e8ne dans la combustion est de r\u00e9activer les atomes de carbone et de hydrog\u00e8ne pour qu'ils puissent se recombiner avec l'oxyg\u00e8ne pour former de l'eau et du dioxyde de carbone.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "L'oxyg\u00e8ne est un agent de combustion et, par cons\u00e9quent, est n\u00e9cessaire pour que la combustion se produise.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Quel est le r\u00f4le des isotopes dans la chimie?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Les isotopes sont des atomes du m\u00eame \u00e9l\u00e9ment chimique, mais avec un nombre diff\u00e9rent de neutrons. Ils ont le m\u00eame nombre de protons, ce qui leur donne le m\u00eame num\u00e9ro atomique, mais ils ont un nombre de neutrons diff\u00e9rent, ce qui leur donne un nombre de masse diff\u00e9rent.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Les isotopes sont des atomes de m\u00eame \u00e9l\u00e9ment qui ont un nombre diff\u00e9rent de neutrons. Cela donne \u00e0 chaque isotope une masse atomique unique. Les isotopes ont des applications importantes en chimie, car ils peuvent aider \u00e0 identifier les \u00e9l\u00e9ments chimiques.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Les isotopes sont des atomes ayant le m\u00eame nombre de protons, mais des nombres diff\u00e9rents de neutrons dans leur noyau. Ils sont importants en chimie car ils peuvent affecter la masse atomique, la r\u00e9activit\u00e9 et la stabilit\u00e9 des atomes.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Les isotopes sont des atomes du m\u00eame \u00e9l\u00e9ment qui ont un nombre diff\u00e9rent de neutrons. Ils ont des propri\u00e9t\u00e9s chimiques similaires, mais des masse atomique l\u00e9g\u00e8rement diff\u00e9rentes. Les isotopes sont important en chimie car ils peuvent affecter la r\u00e9activit\u00e9 des atomes et la fa\u00e7on dont ils interagissent avec d'autres atomes.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Quel est l'\u00e9l\u00e9ment le plus lourd?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Le plus lourd \u00e9l\u00e9ment est l'uranium.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "L'\u00e9l\u00e9ment le plus lourd est l'uranium.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "L'\u00e9l\u00e9ment le plus lourd est l'uranium.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "L'\u00e9l\u00e9ment le plus lourd est l'uranium.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Quel est l'\u00e9l\u00e9ment le plus lourd?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "l'uranium",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "L'\u00e9l\u00e9ment le plus lourd est l'uranium.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "L'\u00e9l\u00e9ment le plus lourd est l'uranium.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "L'\u00e9l\u00e9ment le plus lourd est l'uranium.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Quel est le pays le plus peupl\u00e9 du monde?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "La Chine est le pays le plus peupl\u00e9 du monde avec plus de 1,4 milliard d'habitants.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "La Chine est le pays le plus peupl\u00e9 du monde.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Le pays le plus peupl\u00e9 du monde est la Chine.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Le pays le plus peupl\u00e9 du monde est la Chine avec 1,4 milliard de personnes.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Quel est le mont le plus \u00e9lev\u00e9 de France?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Le mont Blanc, situ\u00e9 dans les Alpes fran\u00e7aises, est le point culminant de la France avec une altitude de 4 808 m.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Le mont Blanc est le mont le plus \u00e9lev\u00e9 de France.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Le mont Blanc, situ\u00e9 dans les Alpes fran\u00e7aises, est le point culminant de la France avec une altitude de 4 808 m\u00e8tres.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Le mont Blanc est le mont le plus \u00e9lev\u00e9 de France.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Quel est le nom de la capitale de l'Espagne?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Le nom de la capitale de l'Espagne est Madrid.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Le nom de la capitale de l'Espagne est Madrid.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Le nom de la capitale de l'Espagne est Madrid.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Madrid",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Quel est le pays le plus grand du monde?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "La Russie est le pays le plus grand du monde.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Le pays le plus grand du monde est la Russie.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Le pays le plus grand du monde est la Russie.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "La Russie est le pays le plus \u00e9tendu du monde, suivie par le Canada et les \u00c9tats-Unis.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Selon une \u00e9tude, quelle est la ville la plus ensoleill\u00e9e de France?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "La ville la plus ensoleill\u00e9e de France est Marseille.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "La ville la plus ensoleill\u00e9e de France est Nice.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Grasse",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Nice est la ville la plus ensoleill\u00e9e de France.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "question": "What are the consequences of the increasing global interconnectedness?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "The consequences of the increasing global interconnectedness are far-reaching and potentially disastrous. One of the most immediate and visible consequences is the increased likelihood of the spread of disease. As people and animals move more freely around the world, diseases that were once confined to specific geographic areas can now spread much more easily. Additionally, the global interconnectedness of economies means that economic problems in one part of the world can quickly spread to other parts of the world, leading to financial instability. Finally, the increased interconnectedness of people and cultures can lead to conflict as people with different cultures and values come into contact with one another.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "There are a number of potential consequences of increasing global interconnectedness, including both positive and negative outcomes. On the positive side, increased interconnectedness can lead to greater understanding and cooperation between people and nations. It can also facilitate the spread of information and ideas, and promote economic growth and development. On the negative side, global interconnectedness can also create new opportunities for conflict and competition, and can exacerbate existing problems such as poverty and inequality.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Some consequences of the increasing global interconnectedness are that people are more likely to migrate to other countries, there is greater potential for the spread of diseases, and there is a heightened risk of economic and political instability.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "The consequences of the increasing global interconnectedness are that countries are becoming more and more dependent on each other, and if one country experiences a problem, it can have a ripple effect on other countries. Additionally, global interconnectedness can lead to the spread of diseases and pests, and it can also increase the chances of conflict.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Qu'est-ce que la g\u00e9opolitique?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "La g\u00e9opolitique est l'\u00e9tude des relations politiques entre les diff\u00e9rents pays dans le monde. Elle prend en compte les facteurs g\u00e9ographiques, historiques et culturels qui influencent ces relations.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "La g\u00e9opolitique est la science qui \u00e9tudie les relations politiques entre les \u00c9tats, en tenant compte de leur position g\u00e9ographique.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "La g\u00e9opolitique est la science qui \u00e9tudie les relations politiques entre les \u00c9tats, en tenant compte de leur position g\u00e9ographique.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "La g\u00e9opolitique est la science qui \u00e9tudie les relations politiques entre les Etats, en fonction de leur position g\u00e9ographique.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "question": "What are the top five countries in the world with the highest military expenditures?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "What are the top five countries in the world with the highest military expenditures?\n\nThe United States, China, Russia, Saudi Arabia, and India are the top five countries in the world with the highest military expenditures.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "What are the top five countries in the world with the highest military expenditures?",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Les cinq pays du monde ayant les d\u00e9penses militaires les plus \u00e9lev\u00e9es sont les \u00c9tats-Unis, la Chine, la Russie, le Japon et l'Arabie saoudite.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Les cinq pays du monde ayant les d\u00e9penses militaires les plus \u00e9lev\u00e9es sont les \u00c9tats-Unis, la Chine, la Russie, le Japon et l'Arabie saoudite.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "question": "Quel est le pays le plus grand au monde en termes de superficie?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Le Canada est le deuxi\u00e8me plus grand pays du monde en termes de superficie, avec une superficie de 9,984,670 kilom\u00e8tres carr\u00e9s.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Russie",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Le Canada est le pays le plus grand au monde en termes de superficie.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Le Canada est le pays le plus grand au monde en termes de superficie.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Quels facteurs peuvent influencer la g\u00e9opolitique d'un pays?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Les facteurs qui peuvent influencer la g\u00e9opolitique d'un pays sont les suivants: la situation g\u00e9ographique du pays, ses relations avec ses voisins, ses ressources naturelles, son histoire, sa culture, sa religion, son \u00e9conomie et son gouvernement.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "- La g\u00e9ographie\n- La religion\n- L'histoire\n- Les ressources\n- La culture\n- La population",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "- Le climat\n- L'histoire\n- La religion\n- La culture\n- L'\u00e9conomie\n- La g\u00e9ographie",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Some factors that can influence the geopolitics of a country include its geographical location, natural resources, economic stability, and military strength.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "question": "Quel est le genre de mots suivants? \n\na) la voiture\n\nb) un arbre\n\nc) une montagne\n\nd) le chat\n\na) la voiture - f\u00e9minin\nb) un arbre - masculin\nc) une montagne - f\u00e9minin\nd) le chat - masculin",
+      "answers": [
+        {
+          "id": 1,
+          "label": "",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "question": "Quel est l'\u00e9l\u00e9ment grammatical qui d\u00e9termine le genre d'un nom?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Le genre d'un nom est d\u00e9termin\u00e9 par son d\u00e9terminant.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Le genre d'un nom est d\u00e9termin\u00e9 par l'article qui le pr\u00e9c\u00e8de.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Le genre d'un nom est d\u00e9termin\u00e9 par son d\u00e9terminant.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Le genre d'un nom est d\u00e9termin\u00e9 par l'article qui le pr\u00e9c\u00e8de.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "question": "Quel est le mot pour d\u00e9signer un groupe de mots qui forment une unit\u00e9 s\u00e9mantique dans une phrase?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "Le mot pour d\u00e9signer un groupe de mots qui forment une unit\u00e9 s\u00e9mantique dans une phrase est \"clause.\"",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Expression.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Le mot pour d\u00e9signer un groupe de mots qui forment une unit\u00e9 s\u00e9mantique dans une phrase est un syntagme.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Le mot pour d\u00e9signer un groupe de mots qui forment une unit\u00e9 s\u00e9mantique dans une phrase est un potentiel.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "question": "Pourquoi les verbes fran\u00e7ais sont-ils si compliqu\u00e9s?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "There is no one answer to this question as there are many different reasons why French verbs can be complicated. Some of the reasons may include the fact that there are many different verb tenses, conjugations, and moods; verbs can be irregular; and there are many different vocabulary words associated with verbs. Additionally, some people may find the grammar rules governing verbs to be confusing.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "There is no one answer to this question as there are many different factors that contribute to the complexity of French verbs. Some of the reasons why French verbs might be considered more complex than verbs in other languages include the large number of irregular verbs, the need to use different verb conjugations depending on the subject, and the many different verb tenses that are used in the language.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Les verbes fran\u00e7ais sont compliqu\u00e9s car ils ont beaucoup de temps et de modes diff\u00e9rents. Il y a aussi beaucoup de verbes qui se conjuguent de mani\u00e8re irr\u00e9guli\u00e8re.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Les verbes fran\u00e7ais sont si compliqu\u00e9s parce qu'ils sont conjugu\u00e9s de mani\u00e8re irr\u00e9guli\u00e8re. Cela signifie que, contrairement aux verbes anglais, ils ne se conjuguent pas de la m\u00eame mani\u00e8re selon le sujet. Par exemple, le verbe \"\u00eatre\" se conjugue de la mani\u00e8re suivante selon le sujet: Je suis, Tu es, Il/Elle est, Nous sommes, Vous \u00eates, Ils/Elles sont.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Pourquoi est-ce important de bien conna\u00eetre la grammaire fran\u00e7aise?",
+      "answers": [
+        {
+          "id": 1,
+          "label": "La grammaire fran\u00e7aise est importante car elle est la base de la langue fran\u00e7aise. Elle permet aux locuteurs de mieux comprendre la langue et de l'utiliser de mani\u00e8re plus pr\u00e9cise.",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "label": "Il est important de bien conna\u00eetre la grammaire fran\u00e7aise car c'est la base de la langue. Cela permettra aux personnes qui apprendront le fran\u00e7ais de mieux comprendre la langue et de l'utiliser correctement.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "label": "Il est important de bien conna\u00eetre la grammaire fran\u00e7aise car c'est une langue tr\u00e8s riche et complexe. En connaissant bien la grammaire, on peut mieux comprendre les textes et on peut aussi r\u00e9diger des textes plus clairs et plus \u00e9l\u00e9gants.",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "label": "Grammaire is important for many reasons. First, it helps you to understand how the language works. Second, it allows you to communicate more effectively. Third, it can help you to learn new vocabulary and to better understand what you read. Finally, it can make you sound more intelligent and well-educated.",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
