@@ -1,1 +1,2 @@
-output_questions_*
+output_questions*
+__pycache__
