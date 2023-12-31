@@ -60,3 +60,12 @@ docker build -f Dockerfile.prod -t suro-api:prod .
 ```
 
 *Important*: make sure that the build-arg REACT_APP_SURO_API_URL matches the api url and port otherwise the requests will not be allowed by the api CORS policy. That's why it is better to use the docker compose command along with a proper .env file.
+
+## Generate questions
+
+Make sure to create your own themes.txt file based on the sample.
+
+```bash
+cd suro-generator
+OPENAI_API_KEY=MY_OPENAI_API_KEY python main.py -t themes.txt
+```
