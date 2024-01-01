@@ -1,3 +1,5 @@
+from datetime import datetime
+import json
 from openai import OpenAI
 
 SYSTEM_CONTEXT = """Tu es un assitant concu pour générer des questions de 100 caractères maximum 
@@ -17,7 +19,9 @@ class SuroGenerator:
     __client = OpenAI()
     __model = "gpt-3.5-turbo-1106"
 
-    def __init__(self, show_cost=True) -> None:
+    def __init__(self, themes, nb_questions_per_theme=1, show_cost=True) -> None:
+        self.themes = themes
+        self.nb_questions_per_theme = nb_questions_per_theme
         self.show_cost = show_cost
         self.messages = [
             {
@@ -50,7 +54,14 @@ class SuroGenerator:
 
         return response.choices[0].message.content
 
-    def generate_questions(self, n, theme):
+    def __print_questions(self, output_json):
+        # Création du nom du fichier avec la date et l'heure actuelles
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        output_filename = f"output_questions_{timestamp}.json"
+        with open(output_filename, "w") as json_file:
+            json_file.write(output_json)
+
+    def generate_n_questions_by_theme(self, n, theme):
         '''
         Generate n questions based on a theme.
             Parameters:
@@ -62,3 +73,23 @@ class SuroGenerator:
         messsage_to_add = f"Génère {n} questions et leurs réponses sur qui portent sur le thème {theme}."
         self.__add_message(messsage_to_add)
         return self.__create_completion()
+
+    def generate_questions(self):
+        # Generate all the questions
+        json_questions_list = []
+        for theme in self.themes:
+            print("Génération des questions du theme : " + theme)
+            questions = self.generate_n_questions_by_theme(
+                self.nb_questions_per_theme, theme)
+            json_questions = json.loads(questions)
+            json_questions_list.append(json_questions)
+
+        # Merge all questions into one single JSON
+        merged_json = {"questions": []}
+        for json_questions in json_questions_list:
+            merged_json["questions"].extend(json_questions["questions"])
+
+        # Save the JSON as file
+        merged_questions = json.dumps(
+            merged_json, ensure_ascii=False, indent=2)
+        self.__print_questions(merged_questions)
