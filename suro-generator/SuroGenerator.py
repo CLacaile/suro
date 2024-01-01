@@ -29,30 +29,33 @@ class SuroGenerator:
                 "content": SYSTEM_CONTEXT
             }
         ]
+        self.__total_input_tokens = 0
+        self.__total_output_tokens = 0
 
     def __add_message(self, message) -> None:
         self.messages.append({"role": "user", "content": message})
 
     def __create_completion(self):
-        response = self.__client.chat.completions.create(
-            model=self.__model,
-            response_format={"type": "json_object"},
-            messages=self.messages
-        )
+        response = '{"questions":[]}'
+        try:
+            response = self.__client.chat.completions.create(
+                model=self.__model,
+                response_format={"type": "json_object"},
+                messages=self.messages
+            )
+        except:
+            print("Something went wrong when creating the completions.")
+            return response
 
-        print(f"Finish reason: {response.choices[0].finish_reason}")
+        if response.usage:
+            self.__total_input_tokens += int(response.usage.prompt_tokens)
+            self.__total_output_tokens += int(response.usage.completion_tokens)
 
-        if self.show_cost:
-            input_cost = int(response.usage.prompt_tokens) * INPUT_TOKENS_COST
-            output_cost = int(
-                response.usage.completion_tokens) * OUTPUT_TOKENS_COST
-            print(
-                f"Input: {response.usage.prompt_tokens} tokens ({input_cost}$)")
-            print(
-                f"Output: {response.usage.completion_tokens} tokens ({output_cost}$)")
-            print(f"Total cost: {input_cost + output_cost}$")
+        if response.choices:
+            print(f"Finish reason: {response.choices[0].finish_reason}")
+            return response.choices[0].message.content
 
-        return response.choices[0].message.content
+        return response
 
     def __print_questions(self, output_json):
         # Création du nom du fichier avec la date et l'heure actuelles
@@ -93,3 +96,13 @@ class SuroGenerator:
         merged_questions = json.dumps(
             merged_json, ensure_ascii=False, indent=2)
         self.__print_questions(merged_questions)
+
+    def show_total_cost(self):
+        print("---- USAGE ----")
+        input_cost = self.__total_input_tokens * INPUT_TOKENS_COST
+        output_cost = self.__total_output_tokens * OUTPUT_TOKENS_COST
+        print(
+            f"Input: {self.__total_input_tokens} tokens ({input_cost}$)")
+        print(
+            f"Output: {self.__total_output_tokens} tokens ({output_cost}$)")
+        print(f"Total cost: {input_cost + output_cost}$")

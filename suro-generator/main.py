@@ -36,6 +36,7 @@ def main():
     suro_generator = SuroGenerator(
         themes=themes, nb_questions_per_theme=1, show_cost=False)
     suro_generator.generate_questions()
+    suro_generator.show_total_cost()
 
 
 if __name__ == '__main__':
