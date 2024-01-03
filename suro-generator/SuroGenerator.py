@@ -1,5 +1,6 @@
 from datetime import datetime
 import json
+from math import ceil
 from openai import OpenAI
 
 SYSTEM_CONTEXT = """Tu es un assitant concu pour générer des questions de 100 caractères maximum 
@@ -10,6 +11,8 @@ qui ont les propriétés suivantes : 'id' un identifiant unique, 'question' le t
 'theme' le thème en anglais de la question, 'answers' un tableau d'objet.
 Les objets answers ont les propriétés suivantes : 'id' un identifiant unique, 'label' le texte de la réponse, 
 'isCorrect' un booléen indiquant si réponse est vraie ou fausse."""
+
+MAX_NB_QUESTIONS_PER_COMPLETION = 2
 
 INPUT_TOKENS_COST = 0.001/1000
 OUTPUT_TOKENS_COST = 0.002/1000
@@ -52,7 +55,6 @@ class SuroGenerator:
             self.__total_output_tokens += int(response.usage.completion_tokens)
 
         if response.choices:
-            print(f"Finish reason: {response.choices[0].finish_reason}")
             return response.choices[0].message.content
 
         return response
@@ -63,6 +65,13 @@ class SuroGenerator:
         output_filename = f"output_questions_{timestamp}.json"
         with open(output_filename, "w") as json_file:
             json_file.write(output_json)
+
+    def __merge_questions(self, json_questions_list) -> str:
+        # Merge all questions into one single JSON
+        merged_json = {"questions": []}
+        for json_questions in json_questions_list:
+            merged_json["questions"].extend(json_questions["questions"])
+        return merged_json
 
     def generate_n_questions_by_theme(self, n, theme):
         '''
@@ -78,21 +87,29 @@ class SuroGenerator:
         return self.__create_completion()
 
     def generate_questions(self):
-        # Generate all the questions
         json_questions_list = []
+
         for theme in self.themes:
-            print("Génération des questions du theme : " + theme)
-            questions = self.generate_n_questions_by_theme(
-                self.nb_questions_per_theme, theme)
-            json_questions = json.loads(questions)
-            json_questions_list.append(json_questions)
+            print("Génération des questions du thème : " + theme)
 
-        # Merge all questions into one single JSON
-        merged_json = {"questions": []}
-        for json_questions in json_questions_list:
-            merged_json["questions"].extend(json_questions["questions"])
+            # Generate batches of questions as the OpenAI API cannot handle too many questions
+            nb_questions_remaining = self.nb_questions_per_theme
+            batch_index = 1
+            nb_batches = ceil(self.nb_questions_per_theme / MAX_NB_QUESTIONS_PER_COMPLETION)
+            while nb_questions_remaining > 0:
+                print(f"{batch_index}/{nb_batches}")
+                batch_size = min(nb_questions_remaining,
+                                 MAX_NB_QUESTIONS_PER_COMPLETION)
+                questions = self.generate_n_questions_by_theme(
+                    batch_size, theme)
+                json_questions = json.loads(questions)
+                json_questions_list.append(json_questions)
+                nb_questions_remaining -= batch_size
+                batch_index += batch_index
 
-        # Save the JSON as file
+        merged_json = self.__merge_questions(json_questions_list)
+
+        # Save the JSON as a file
         merged_questions = json.dumps(
             merged_json, ensure_ascii=False, indent=2)
         self.__print_questions(merged_questions)
