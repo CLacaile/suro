@@ -22,10 +22,9 @@ class SuroGenerator:
     __client = OpenAI()
     __model = "gpt-3.5-turbo-1106"
 
-    def __init__(self, themes, nb_questions_per_theme=1, show_cost=True) -> None:
+    def __init__(self, themes, nb_questions_per_theme=1) -> None:
         self.themes = themes
         self.nb_questions_per_theme = nb_questions_per_theme
-        self.show_cost = show_cost
         self.messages = [
             {
                 "role": "system",
