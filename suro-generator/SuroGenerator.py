@@ -12,8 +12,6 @@ qui ont les propriétés suivantes : 'id' un identifiant unique qui est conforme
 Les objets answers ont les propriétés suivantes : 'id' un identifiant unique, 'label' le texte de la réponse, 
 'isCorrect' un booléen indiquant si réponse est vraie ou fausse."""
 
-MAX_NB_QUESTIONS_PER_COMPLETION = 2
-
 INPUT_TOKENS_COST = 0.001/1000
 OUTPUT_TOKENS_COST = 0.002/1000
 
@@ -22,9 +20,10 @@ class SuroGenerator:
     __client = OpenAI()
     __model = "gpt-3.5-turbo-1106"
 
-    def __init__(self, themes, nb_questions_per_theme=1) -> None:
+    def __init__(self, themes, nb_questions_per_theme=1, nb_questions_per_batch=1) -> None:
         self.themes = themes
         self.nb_questions_per_theme = nb_questions_per_theme
+        self.nb_questions_per_batch = nb_questions_per_batch
         self.messages = [
             {
                 "role": "system",
@@ -94,11 +93,11 @@ class SuroGenerator:
             # Generate batches of questions as the OpenAI API cannot handle too many questions
             nb_questions_remaining = self.nb_questions_per_theme
             batch_index = 1
-            nb_batches = ceil(self.nb_questions_per_theme / MAX_NB_QUESTIONS_PER_COMPLETION)
+            nb_batches = ceil(self.nb_questions_per_theme / self.nb_questions_per_batch)
             while nb_questions_remaining > 0:
                 print(f"{batch_index}/{nb_batches}")
                 batch_size = min(nb_questions_remaining,
-                                 MAX_NB_QUESTIONS_PER_COMPLETION)
+                                 self.nb_questions_per_batch)
                 questions = self.generate_n_questions_by_theme(
                     batch_size, theme)
                 json_questions = json.loads(questions)
