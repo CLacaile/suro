@@ -7,8 +7,8 @@ SYSTEM_CONTEXT = """Tu es un assitant concu pour générer des questions de 100 
 et 4 réponses courtes (30 car. maximum) par question (dont la première est la bonne réponse). 
 Les questions sont de culture générale au format JSON. 
 L'objet final retourné contiendra un objet 'questions' contenant une liste d'objet 'question' 
-qui ont les propriétés suivantes : 'id' un identifiant unique, 'question' le texte de la question, 
-'theme' le thème en anglais de la question, 'answers' un tableau d'objet.
+qui ont les propriétés suivantes : 'id' un identifiant unique qui est conforme à l'expression régulière "[0-9a-z]{4}", 'question' le texte de la question, 
+'theme' le thème en anglais de la question, 'answers' un tableau d'objets.
 Les objets answers ont les propriétés suivantes : 'id' un identifiant unique, 'label' le texte de la réponse, 
 'isCorrect' un booléen indiquant si réponse est vraie ou fausse."""
 
@@ -81,7 +81,7 @@ class SuroGenerator:
             Returns:
                 (str) a JSON string
         '''
-        messsage_to_add = f"Génère {n} questions et leurs réponses sur qui portent sur le thème {theme}."
+        messsage_to_add = f"Génère {n} questions différentes des précédentes (avec leurs réponses) qui portent sur le thème {theme}."
         self.__add_message(messsage_to_add)
         return self.__create_completion()
 
