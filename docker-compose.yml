@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 
 services:
   api:
@@ -12,7 +12,7 @@ services:
       - PORT=30000
       - SURO_FRONTEND_URL=${SURO_FRONTEND_URL}
     ports:
-      - "${SURO_API_PORT}:30000"
+      - ${SURO_API_PORT}:30000
 
   frontend:
     build:
@@ -24,6 +24,6 @@ services:
     container_name: suro-frontend
     restart: unless-stopped
     ports:
-      - "${SURO_FRONTEND_PORT}:80"
+      - ${SURO_FRONTEND_PORT}:80
     environment:
       - REACT_APP_SURO_API_URL=${SURO_API_URL}
